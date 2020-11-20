@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    link(type="text/css" rel="stylesheet" href="/stylesheets/style.css")
+  body
+    #success_message
+      if success_message
+        h1 #{success_message}
+    #error_message
+      if error_message
+        h1 #{error_message}
+    div
+      include partials/navbar.pug
+      p Some text here!
